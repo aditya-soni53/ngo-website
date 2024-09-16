@@ -3454,6 +3454,16 @@ ul.login li:hover .login-form {
     transition: all 0.3s ease 0s
 }
 
+.about-banner {
+    background: url("img/banner/about-banner.jpg") !important;
+}
+
+.contact-banner {
+    background: url("img/banner/contactus-banner.jpg") !important;
+}
+
+.health-banner {}
+
 .banner-area.fixed-bg {
     background: rgba(0, 0, 0, 0) url("img/banner/6.webp") no-repeat fixed center top / cover;
 }
