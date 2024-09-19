@@ -3447,7 +3447,7 @@ ul.login li:hover .login-form {
 
 .banner-area {
     background: url("img/banner/eduction-banner.jpg");
-    background-size: contain;
+    /* background-size: contain; */
     background-repeat: repeat-x;
     background-position: center;
     padding: 128px 0;
@@ -3455,34 +3455,58 @@ ul.login li:hover .login-form {
 }
 
 .about-banner {
-    /* background: none !important; */
     background: url("img/banner/about-banner.jpg") !important;
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: center;
+    padding: 128px 0;
+    transition: all 0.3s ease 0s
 }
 
 .contact-banner {
-    /* background: none !important; */
     background: url("img/banner/contactus-banner.jpg") !important;
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: center;
+    padding: 128px 0;
+    transition: all 0.3s ease 0s
 }
 
 .health-banner {
-    /* background: none !important; */
     background: url("img/banner/health-banner.jpg") !important;
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: center;
+    padding: 128px 0;
+    transition: all 0.3s ease 0s
 }
 
 .activities-banner {
-    /* background: none !important; */
     background: url("img/banner/activities-banner.jpg") !important;
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: center;
+    padding: 128px 0;
+    transition: all 0.3s ease 0s
 }
 
 .self-reliance-banner {
-    /* background: none !important; */
     background: url("img/banner/SELF-RELIANCE-banner.jpg") !important;
+    background-size: contain;
+    background-repeat: repeat-x;
+    padding: 128px 0;
+    transition: all 0.3s ease 0s;
     background-position-x: -90px !important;
 }
 
 .sewa-path-lab-banner {
     background: url("img/banner/SEWA-PATH-LAB-banner.jpg") !important;
-    background-position-x: -80px !important;
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: center;
+    padding: 128px 0;
+    transition: all 0.3s ease 0s
+    /* background-position-x: -80px !important; */
 }
 
 .banner-area.fixed-bg {
