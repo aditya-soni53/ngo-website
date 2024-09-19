@@ -1872,7 +1872,7 @@ ul.login li:hover .login-form {
 
 @media screen and (min-width: 767px) {
     .single-item img {
-        object-position: 0 -300px;
+        /* object-position: 0 -300px; */
     }
 }
 
@@ -3455,14 +3455,35 @@ ul.login li:hover .login-form {
 }
 
 .about-banner {
+    /* background: none !important; */
     background: url("img/banner/about-banner.jpg") !important;
 }
 
 .contact-banner {
+    /* background: none !important; */
     background: url("img/banner/contactus-banner.jpg") !important;
 }
 
-.health-banner {}
+.health-banner {
+    /* background: none !important; */
+    background: url("img/banner/health-banner.jpg") !important;
+}
+
+.activities-banner {
+    /* background: none !important; */
+    background: url("img/banner/activities-banner.jpg") !important;
+}
+
+.self-reliance-banner {
+    /* background: none !important; */
+    background: url("img/banner/SELF-RELIANCE-banner.jpg") !important;
+    background-position-x: -90px !important;
+}
+
+.sewa-path-lab-banner {
+    background: url("img/banner/SEWA-PATH-LAB-banner.jpg") !important;
+    background-position-x: -80px !important;
+}
 
 .banner-area.fixed-bg {
     background: rgba(0, 0, 0, 0) url("img/banner/6.webp") no-repeat fixed center top / cover;
