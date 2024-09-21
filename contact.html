@@ -114,11 +114,126 @@
             font-size: 12px;
         }
 
+        .ag-courses_box {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px 0 0 0;
+        }
+
+        .ag-courses_item {
+            margin: 0 15px 30px;
+            overflow: hidden;
+            border-radius: 28px;
+        }
+
+        .ag-courses-item_link {
+            display: block;
+            padding: 30px 20px;
+            background-color: #121212;
+
+            overflow: hidden;
+
+            position: relative;
+        }
+
+        .ag-courses-item_link:hover,
+        .ag-courses-item_link:hover .ag-courses-item_date {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .ag-courses-item_link:hover .ag-courses-item_bg {
+            -webkit-transform: scale(10);
+            -ms-transform: scale(10);
+            transform: scale(10);
+        }
+
+        .ag-courses-item_title {
+            min-height: 87px;
+            margin: 0 0 25px;
+
+            overflow: hidden;
+
+            font-weight: bold;
+            font-size: 30px;
+            color: #fff;
+
+            z-index: 2;
+            position: relative;
+        }
+
+        .ag-courses-item_date-box {
+            font-size: 18px;
+            color: #fff;
+
+            z-index: 2;
+            position: relative;
+        }
+
+        .ag-courses-item_date {
+            font-weight: bold;
+            color: #f9b234;
+
+            -webkit-transition: color 0.5s ease;
+            -o-transition: color 0.5s ease;
+            transition: color 0.5s ease;
+        }
+
+        .ag-courses-item_bg {
+            height: 128px;
+            width: 128px;
+            background-color: #f9b234;
+
+            z-index: 1;
+            position: absolute;
+            top: -75px;
+            right: -75px;
+
+            border-radius: 50%;
+
+            -webkit-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+
+        .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+            background-color: #3ecd5e;
+        }
+
+        .ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+            background-color: #e44002;
+        }
+
+        .ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+            background-color: #952aff;
+        }
+
+        .ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+            background-color: #cd3e94;
+        }
+
+        .ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+            background-color: #4c49ea;
+        }
+
         @media screen and (min-width: 768px) {
             .custom-font-size {
                 font-size: 16px !important;
             }
-            
+
+            .ag-courses_item {
+                -ms-flex-preferred-size: calc(33.33333%);
+                flex-basis: calc(33.33333%);
+                width: 50%;
+            }
+
         }
     </style>
 </head>
@@ -181,7 +296,7 @@
                                                     <li><a href="about.html">About</a>
                                                         <ul class="sub-menu">
 
-                                                            <li><a href="contact.html">Contact Us</a></li>
+                                                            <li><a class="active-link" href="contact.html">Contact Us</a></li>
                                                         </ul>
                                                     </li>
                                                     <li><a href="#">Sewa Kary</a>
@@ -326,7 +441,7 @@
             </div>
             <!--End of Banner Area-->
             <!--Contact Info Area Start-->
-            <div class="contact-info-area">
+            <!-- <div class="contact-info-area">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
@@ -364,45 +479,86 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!--End of Cntact Info Area-->
             <!--Contact Info Map Area Start-->
             <div class="contact-info-map-area">
-                <!--Google Map Start -->
-                <div class="google-map-area">
-                    <!--  Map Section -->
-                    <div id="contacts" class="map-area">
-                        <iframe class="contact-map-size"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.1369300303268!2d75.79236447543907!3d26.899149076655252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db4177c41ce0d%3A0x11dce4f304ba2278!2sSewa%20Sadan-Sewa%20Bharti%20Rajasthan!5e0!3m2!1sen!2sin!4v1726139261638!5m2!1sen!2sin"
-                            allowfullscreen="" loading="lazy">
-                        </iframe>
+                <div class="ag-courses_box">
+                    <div class="ag-courses_item">
+                        <a href="#" class="ag-courses-item_link">
+                            <div class="ag-courses-item_bg"></div>
+
+                            <div class="ag-courses-item_title">
+                                <p>राजस्थान क्षेत्रीय कार्यालय</p>
+                                <p>Sewa Sadan,Sahkar Marg,</p>
+                                <p class="">Lalkothi, Jaipur, Rajasthan-</p><span>302007</span>
+                            </div>
+                            <p class="ag-courses-item_date-box">Phone: 01412741222 , 01412744545</p>
+
+                            <div class="ag-courses-item_date-box">
+                                Email:
+                                <span class="ag-courses-item_date"> sewabhartijpr@gmail.com </span>
+                            </div>
+                        </a>
                     </div>
-                </div>
-                <!--End of Google Map-->
-                <div class="contact-information-container">
-                    <div class="information">
-                        <img src="img/banner/8.jpg" alt="">
-                        <div class="contact-info-content">
-                            <h3>Contact info</h3>
-                            <div class="single-contact-info">
-                                <span class="title">Address:</span>
-                                <span class="text">7SEWA SADAN, SAHKAR MARG <br> Lalkothi JAIPUR Rajasthan-
-                                    302007</span>
+
+                    <div class="ag-courses_item">
+                        <a href="#" class="ag-courses-item_link">
+                            <div class="ag-courses-item_bg"></div>
+
+                            <div class="ag-courses-item_title">
+                                <p>सेवा भारती समिति जोधपुर प्रान्त</p>
+                                <p>सूरज भवन'</p>
+                                <p class="">121-A, बल्लभ बाड़ी,गुमानपुरा कोटा, </p><span>324007</span>
                             </div>
-                            <div class="single-contact-info">
-                                <span class="title">Phone:</span>
-                                <span class="text">0141-2741222, 01412744545</span>
+                            <p class="ag-courses-item_date-box">Phone: 9460941842</p>
+
+                            <div class="ag-courses-item_date-box">
+                                Prant Mantri
+                                <span class="ag-courses-item_date"></span>
                             </div>
-                            <div class="single-contact-info">
-                                <span class="title">Address:</span>
-                                <span class="text"><a style="color: white;"
-                                        href="mailto:sewabhartijpr@gmail.com">sewabhartijpr@gmail.com</a></span>
-                            </div>
-                        </div>
+                        </a>
                     </div>
+
+                    <div class="ag-courses_item">
+                        <a href="#" class="ag-courses-item_link">
+                            <div class="ag-courses-item_bg"></div>
+
+                            <div class="ag-courses-item_title">
+                                <p>सेवा भारती समिति जोधपुर प्रान्त</p>
+                                <p>सूरज भवन'</p>
+                                <p class="">121-A, बल्लभ बाड़ी,गुमानपुरा कोटा, </p><span>324007</span>
+                            </div>
+                            <p class="ag-courses-item_date-box">Phone: 9352008347</p>
+
+                            <div class="ag-courses-item_date-box">
+                                Prant Mantri <br>
+                                <span class="ag-courses-item_date">sewabhartijpr@gmail.com</span>
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="ag-courses_item">
+                        <a href="#" class="ag-courses-item_link">
+                            <div class="ag-courses-item_bg"></div>
+
+                            <div class="ag-courses-item_title">
+                                <p>सेवा भारती समिति जयपुर प्रान्त</p>
+                                <p>सूरज भवन सहकर लेन,</p>
+                                <p class="">सहकार मार्ग,</p><span>लाल कोठी,जयपुर, PIN-304007</span>
+                            </div>
+                            <p class="ag-courses-item_date-box">Phone: 01412741222 , 01412744545</p>
+
+                            <div class="ag-courses-item_date-box">
+                                Prant Mantri: Girdhari Lal Sharma
+                                <span class="ag-courses-item_date">sewabhartijpr@gmail.com</span>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
             </div>
-            <!--End of Contact Info Map Area-->
             <!--Contact Form Area Start-->
             <div class="contact-form-area section-gray">
                 <div class="container">
@@ -432,7 +588,8 @@
                             </a>
                         </div>
                         <div class="col-4 col-md-2">
-                            <a href="http://sewabhartidelhi.org/" target="_blank" class="btn btn-primary w-100" role="button">
+                            <a href="http://sewabhartidelhi.org/" target="_blank" class="btn btn-primary w-100"
+                                role="button">
                                 <span class="custom-font-size">
                                     <span class="">सेवा भारती देल्ही</span>
                                 </span>
@@ -455,48 +612,48 @@
                             </a>
                         </div>
                         <div class="col-4 col-md-2">
-                            <a href="https://sevabharathiap.blogspot.com/" target="_blank"
-                                class="btn btn-primary w-100" role="button">
+                            <a href="https://sevabharathiap.blogspot.com/" target="_blank" class="btn btn-primary w-100"
+                                role="button">
                                 <span class="custom-font-size">
                                     <span class="">सेवा भारती आंध्रप्रदेश</span>
                                 </span>
                             </a>
                         </div>
                         <div class="col-4 col-md-2">
-                            <a href="http://sewabhartigwalior.org/" target="_blank"
-                                class="btn btn-primary w-100" role="button">
+                            <a href="http://sewabhartigwalior.org/" target="_blank" class="btn btn-primary w-100"
+                                role="button">
                                 <span class="custom-font-size">
                                     <span class="">सेवा भारती ग्वालिअर</span>
                                 </span>
                             </a>
                         </div>
                         <div class="col-4 col-md-2">
-                            <a href="http://sevabharatipurbanchal.org/" target="_blank"
-                                class="btn btn-primary w-100" role="button">
+                            <a href="http://sevabharatipurbanchal.org/" target="_blank" class="btn btn-primary w-100"
+                                role="button">
                                 <span class="custom-font-size">
                                     <span class="">सेवा भारती पूर्वांचल</span>
                                 </span>
                             </a>
                         </div>
                         <div class="col-4 col-md-2">
-                            <a href="http://sevabharathitn.org/" target="_blank"
-                                class="btn btn-primary w-100" role="button">
+                            <a href="http://sevabharathitn.org/" target="_blank" class="btn btn-primary w-100"
+                                role="button">
                                 <span class="custom-font-size">
                                     <span class="">सेवा भारती तमिलनाडु</span>
                                 </span>
                             </a>
                         </div>
                         <div class="col-4 col-md-2">
-                            <a href="http://sewabhartichd.org/" target="_blank"
-                                class="btn btn-primary w-100" role="button">
+                            <a href="http://sewabhartichd.org/" target="_blank" class="btn btn-primary w-100"
+                                role="button">
                                 <span class="custom-font-size">
                                     <span class="">सेवा भारती चंडीगढ़</span>
                                 </span>
                             </a>
                         </div>
                         <div class="col-4 col-md-2">
-                            <a href="http://www.sewabharathi.com/" target="_blank"
-                                class="btn btn-primary w-100" role="button">
+                            <a href="http://www.sewabharathi.com/" target="_blank" class="btn btn-primary w-100"
+                                role="button">
                                 <span class="custom-font-size">
                                     <span class="">सेवा भारती ब्लाग्स </span>
                                 </span>

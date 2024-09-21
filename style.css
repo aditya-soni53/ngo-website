@@ -1369,6 +1369,11 @@ ul.login li:hover .login-form {
     color: #ffffff;
 }
 
+.download-active {
+    color: #fff;
+    background: #00aff0;
+}
+
 .header-login-register>button {
     border: 2px solid #00aff0;
     color: #ffffff;
@@ -4283,8 +4288,11 @@ donate-amount-container {
 }
 
 .contact-info-map-area {
-    height: 500px;
     position: relative;
+}
+
+.active-link {
+    color: #00AFF0 !important;
 }
 
 .contact-info-map-area .google-map-area {
