@@ -1048,7 +1048,7 @@ header {
 
 .mainmenu ul#nav li {
     display: inline-block;
-    margin-right: 33px;
+    margin-right: 20px;
     position: relative;
     transition: all 0.3s ease 0s
 }
